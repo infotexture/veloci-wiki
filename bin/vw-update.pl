@@ -8,7 +8,7 @@ my $WATCH_PATH=$ARGV[0];
 my $GROWL = `PATH="\$PATH:/usr/local/bin";which growlnotify`;
 chomp $GROWL;
 
-my $GIT = _find_bin('/usr/bin/git');
+my $GIT = _find_bin('/usr/local/bin/git');
 unless (-f $GIT) {
     die ("No Git found!");
 }
